@@ -1,0 +1,60 @@
+<div *ngFor="let GroupItem of GroupList"  class="center-align">
+  <sidebar-item-section name={{GroupItem.Name}}>
+    <div *ngFor="let MenuItem of MenuList"  class="center-align">
+    <sidebar-item title={{MenuItem.Name}} routerLink={{MenuItem.Link}}>
+      <!-- {{MenuItem.Tag}} -->
+    </sidebar-item>
+    </div>
+  </sidebar-item-section>
+</div>
+<div>  
+  <sidebar-item-section name="Monitoring">
+    <sidebar-item title="Terminal" routerLink="/admin/terminal">
+      <terminal-icon></terminal-icon>
+    </sidebar-item>
+    <sidebar-item title="Recycle Bin" routerLink="/admin/recycle-bin">
+      <recycle-bin-icon></recycle-bin-icon>
+    </sidebar-item>
+    <sidebar-item title="Servers" routerLink="/admin/servers">
+      <server-icon></server-icon>
+    </sidebar-item>
+  </sidebar-item-section>
+
+  <sidebar-item-section name="Guides">
+    <sidebar-item title="Documentation" routerLink="/admin/documentation">
+      <doc-icon></doc-icon>
+    </sidebar-item>
+  </sidebar-item-section>
+</div>
+
+<!-- <div>
+  <sidebar-item-section name="Applications">
+    <sidebar-item title="Users" routerLink="/">
+      <user-icon></user-icon>
+    </sidebar-item>
+    <sidebar-item title="Medias" routerLink="/admin/medias">
+      <media-icon></media-icon>
+    </sidebar-item>
+    <sidebar-item title="Contacts" routerLink="/admin/contacts">
+      <contact-icon></contact-icon>
+    </sidebar-item>
+  </sidebar-item-section>
+
+  <sidebar-item-section name="Monitoring">
+    <sidebar-item title="Terminal" routerLink="/admin/terminal">
+      <terminal-icon></terminal-icon>
+    </sidebar-item>
+    <sidebar-item title="Recycle Bin" routerLink="/admin/recycle-bin">
+      <recycle-bin-icon></recycle-bin-icon>
+    </sidebar-item>
+    <sidebar-item title="Servers" routerLink="/admin/servers">
+      <server-icon></server-icon>
+    </sidebar-item>
+  </sidebar-item-section>
+
+  <sidebar-item-section name="Guides">
+    <sidebar-item title="Documentation" routerLink="/admin/documentation">
+      <doc-icon></doc-icon>
+    </sidebar-item>
+  </sidebar-item-section>
+</div> -->
